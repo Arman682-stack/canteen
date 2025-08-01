@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Canteen Ordering</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to College Canteen</h1>
+  <div id="menu">
+    <!-- Example menu items -->
+    <div class="item">
+      <span class="name">Veg Burger</span>
+      <span class="price">$2.50</span>
+      <button onclick="addToCart('Veg Burger', 2.50)">Add</button>
+    </div>
+    <!-- ... more items -->
+  </div>
+  <h2>Cart</h2>
+  <div id="cart"></div>
+  <h2>Delivery Address</h2>
+  <input type="text" id="address" placeholder="Type your delivery address">
+  <button onclick="placeOrder()">Place Order</button>
+  <div id="orderStatus"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
